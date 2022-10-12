@@ -4,8 +4,8 @@
   "description": "Search API to find selling price of cloth item.",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server",
-    "start": "node server"
+    "dev": "nodemon index",
+    "start": "node index"
   },
   "repository": {
     "type": "git",

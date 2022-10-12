@@ -8,19 +8,19 @@ Configure the access key using a .env file.
 
 const searchQuery = async (query) => {
     const params = {
-        'access_key': process.env.SERPSTACK_ACCESS_KEY,
-        'query': query // this is where the query string will be set
+        access_key: process.env.SERPSTACK_ACCESS_KEY,
+        query: 'h&m crop top' // this is where the query string will be set
         // 'type': 'shopping' // specify type for search
     }
 
-    await axios.get('https://api.serpstack.com/search', { params })
+    axios.get('http://api.serpstack.com/search', { params })
         .then(response => {
             const apiResponse = response.data;
             console.log("Total results: ", apiResponse.search_information.total_results);
             apiResponse.organic_results.map((result, number) =>
-                console.log(`${number + 1}, ${result.title}`));
+                console.log(`${number + 1}. ${result.title}`));
         }).catch(error => {
-            console.log(err);
+            console.log(error);
         });
 }
 

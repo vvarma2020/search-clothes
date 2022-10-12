@@ -13,6 +13,7 @@ app.use(express.static('./public'));
 
 // console.log(process.env.SERPSTACK_ACCESS_KEY);
 
+
 app.use(errorHandler);
 
 app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}`))
