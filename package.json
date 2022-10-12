@@ -1,0 +1,26 @@
+{
+  "name": "search-clothes",
+  "version": "1.0.0",
+  "description": "Search API to find selling price of cloth item.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vvarma2020/search-clothes.git"
+  },
+  "author": "vvarma2020",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vvarma2020/search-clothes/issues"
+  },
+  "homepage": "https://github.com/vvarma2020/search-clothes#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "date-fns": "^2.29.3"
+  }
+}
